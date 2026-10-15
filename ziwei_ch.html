@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support — 紫微攻略 Ziwei: Career &amp; Love</title>
+    <meta
+      name="description"
+      content="Support for 紫微攻略 (Ziwei: Career & Love), a Zi Wei Dou Shu app with AI insights for work and love relationships."
+    />
+    <style>
+      :root {
+        --bg: #fbf8f3;
+        --surface: #ffffff;
+        --text: #1f1b3a;
+        --muted: #7a6a9b;
+        --border: #e4d9f1;
+        --primary: #5b2a9d;
+        --primary-soft: #f5f0fa;
+        --accent: #b7861f;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC",
+          "Noto Sans", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+      }
+      header {
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 24px 20px 64px;
+      }
+      header .wrap {
+        padding-bottom: 24px;
+      }
+      .brand {
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent);
+        font-weight: 700;
+        margin: 0 0 8px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 28px;
+        line-height: 1.25;
+        color: var(--primary);
+      }
+      .lead {
+        margin: 0;
+        color: var(--muted);
+      }
+      nav {
+        margin-top: 16px;
+        font-size: 14px;
+      }
+      nav a {
+        margin-right: 16px;
+      }
+      h2 {
+        margin: 36px 0 12px;
+        font-size: 20px;
+        color: var(--primary);
+      }
+      h3 {
+        margin: 4px 0 8px;
+        font-size: 16px;
+      }
+      p,
+      li {
+        color: #2d2850;
+      }
+      a {
+        color: var(--primary);
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 16px 18px;
+        margin: 12px 0;
+      }
+      .card p {
+        margin: 0;
+      }
+      .lang {
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--primary);
+        background: var(--primary-soft);
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 999px;
+        margin-bottom: 8px;
+      }
+      .contact a {
+        display: inline-block;
+        margin-right: 12px;
+        margin-top: 8px;
+        font-weight: 700;
+      }
+      .note {
+        font-size: 14px;
+        color: var(--muted);
+      }
+      footer {
+        margin-top: 48px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <p class="brand">紫微攻略 · Ziwei: Career &amp; Love</p>
+        <h1>支援中心 Support</h1>
+        <p class="lead">紫微斗數 × AI，看懂你和主管、同事、伴侶的相處之道。</p>
+        <nav>
+          <a href="#zh">繁體中文</a>
+          <a href="#en">English</a>
+          <a href="#contact">聯絡我們 Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section id="zh">
+        <span class="lang">繁體中文</span>
+        <h2>這個 App 做什麼</h2>
+        <p>
+          紫微攻略會依你的出生資料排出紫微斗數命盤，再和你身邊每個人（主管、同事、下屬、曖昧對象、伴侶或配偶、前任）的生年四化交叉比對，結合流年、流月、流日，由
+          AI 分析今天彼此最容易摩擦或互助的地方，並給你具體的相處建議。
+        </p>
+      </section>
+
+      <section>
+        <h2>常見問題</h2>
+        <div class="card">
+          <h3>需要註冊或登入嗎？</h3>
+          <p>不需要。開啟即可使用，不必建立帳號。</p>
+        </div>
+        <div class="card">
+          <h3>如何建立我的命盤？</h3>
+          <p>
+            在首頁點「建立本命資料」，輸入出生日期、時辰與出生地。App 會以出生地經度校正為真太陽時。定位權限只用來帶入出生地經度，可以不開啟，改為手動選擇。
+          </p>
+        </div>
+        <div class="card">
+          <h3>如何新增要分析的人？</h3>
+          <p>
+            在「命盤設定」分頁新增關係人，選擇職場（主管、同事、下屬）或感情（曖昧暗戀、伴侶配偶、前任）類別並輸入對方生日。已婚的夫妻相處也適用感情模式。
+          </p>
+        </div>
+        <div class="card">
+          <h3>我的資料會被上傳嗎？</h3>
+          <p>
+            你的生日、命盤與關係人清單只存在你的裝置上。使用 AI 分析時，只會傳送該次分析所需的命盤結構資料與你輸入的問題，人名一律以 T1、T2
+            等代號取代，透過加密連線送至 Google Gemini API。詳見 App 內「設定 → 隱私權政策」。
+          </p>
+        </div>
+        <div class="card">
+          <h3>每天可以用幾次？</h3>
+          <p>
+            免費版的今日雷達掃描、五維碰撞解算、隨身提問每天各 1 次，每類關係人可新增 1 人。VIP 每天各 10 次，每類最多 10 人。次數於每天午夜（裝置時間）重置。
+          </p>
+        </div>
+        <div class="card">
+          <h3>如何訂閱、取消或管理 VIP？</h3>
+          <p>
+            VIP 提供週費、月費、年費三種自動續訂方案。要取消或變更方案，請到 iPhone「設定 → 你的名字 → 訂閱」，選擇本 App
+            管理。請在目前週期結束前至少 24 小時取消，以免自動續訂。我們無法直接替你退款，退款請透過
+            <a href="https://reportaproblem.apple.com">Apple 回報問題</a>申請。
+          </p>
+        </div>
+        <div class="card">
+          <h3>換手機或重新安裝後，VIP 不見了？</h3>
+          <p>
+            請使用同一個 Apple ID 登入，到 App「設定 → 還原購買」，或在 VIP 頁面點「還原購買」。
+          </p>
+        </div>
+        <div class="card">
+          <h3>換手機時資料會保留嗎？</h3>
+          <p>
+            命盤與關係人資料會隨 iCloud 裝置備份（Android 為 Google 備份）一起轉移。請先確認舊手機的系統備份已開啟。
+          </p>
+        </div>
+        <div class="card">
+          <h3>忘記 App 鎖的 PIN 碼怎麼辦？</h3>
+          <p>
+            PIN 碼只存在你的裝置上，我們無法替你重設。若有開啟 Face ID／指紋，可直接用生物辨識解鎖。否則只能刪除並重新安裝
+            App，本機資料會一併清除。
+          </p>
+        </div>
+        <div class="card">
+          <h3>為什麼會看到廣告？</h3>
+          <p>
+            免費版由 Google AdMob 廣告支持，首頁底部會顯示橫幅廣告。升級 VIP 即完全無廣告。
+          </p>
+        </div>
+        <div class="card">
+          <h3>分析結果準確嗎？</h3>
+          <p>
+            內容依紫微斗數命理推演並由 AI 生成，僅供參考與娛樂，不構成任何專業建議。重要決定請依實際情況審慎判斷。
+          </p>
+        </div>
+        <div class="card">
+          <h3>如何切換語言？</h3>
+          <p>到「設定 → 語言」，可選擇繁體中文或 English。</p>
+        </div>
+      </section>
+
+      <hr style="border: 0; border-top: 1px solid var(--border); margin: 48px 0" />
+
+      <section id="en">
+        <span class="lang">English</span>
+        <h2>What this app does</h2>
+        <p>
+          Ziwei: Career &amp; Love builds your Zi Wei Dou Shu birth chart and cross-references it with the
+          birth-year Si-Hua (Four Transformations) of the people around you: boss, coworkers, direct
+          reports, a crush, your partner or spouse, or an ex. Combined with the year, month and day
+          cycles, the AI shows where friction or support is most likely today and gives practical
+          advice.
+        </p>
+      </section>
+
+      <section>
+        <h2>FAQ</h2>
+        <div class="card">
+          <h3>Do I need an account?</h3>
+          <p>No. Open the app and start. No sign-in required.</p>
+        </div>
+        <div class="card">
+          <h3>How do I create my chart?</h3>
+          <p>
+            On the Home tab, tap "Create natal profile" and enter your birth date, hour and birthplace. The app
+            corrects to true solar time using the birthplace longitude. Location access is optional and
+            only fills in that longitude; you can pick the place manually instead.
+          </p>
+        </div>
+        <div class="card">
+          <h3>How do I add people?</h3>
+          <p>
+            In the Charts tab, add a person, choose Work (boss, coworker, direct report) or Love (crush,
+            partner or spouse, ex) and enter their birthday. Love mode also covers married couples.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Is my data uploaded?</h3>
+          <p>
+            Your birth details, chart and people list stay on your device. For an AI reading, only the
+            structured chart data needed for that request and any question you type are sent, over an
+            encrypted connection, to the Google Gemini API. Names are replaced with codes such as T1 and
+            T2. See Settings → Privacy Policy in the app for details.
+          </p>
+        </div>
+        <div class="card">
+          <h3>How many readings do I get per day?</h3>
+          <p>
+            Free: 1 radar scan, 1 five-dimension reading and 1 quick question per day, and 1 person per
+            category. VIP: 10 of each per day and up to 10 people per category. Limits reset at midnight
+            device time.
+          </p>
+        </div>
+        <div class="card">
+          <h3>How do I subscribe, cancel or manage VIP?</h3>
+          <p>
+            VIP comes as weekly, monthly or yearly auto-renewing subscriptions. To cancel or change plans,
+            open iPhone Settings → your name → Subscriptions and select this app. Cancel at least 24 hours
+            before the current period ends to avoid renewal. We cannot issue refunds directly; request one
+            through <a href="https://reportaproblem.apple.com">Apple's Report a Problem</a>.
+          </p>
+        </div>
+        <div class="card">
+          <h3>VIP is missing after reinstalling or switching phones</h3>
+          <p>
+            Sign in with the same Apple ID, then tap Settings → Restore purchase in the app, or Restore
+            purchase on the VIP screen.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Will my data move to a new phone?</h3>
+          <p>
+            Your chart and people list are included in iCloud device backup (Google backup on Android).
+            Make sure system backup is on for the old phone.
+          </p>
+        </div>
+        <div class="card">
+          <h3>I forgot my app lock PIN</h3>
+          <p>
+            The PIN is stored only on your device, so we cannot reset it. If Face ID or fingerprint unlock
+            is on, use that. Otherwise, delete and reinstall the app; this erases the data on the device.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Why are there ads?</h3>
+          <p>
+            The free version is supported by Google AdMob, with a banner at the bottom of the Home screen.
+            VIP removes all ads.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Are the readings accurate?</h3>
+          <p>
+            Readings are based on Zi Wei Dou Shu and generated by AI. They are for reference and
+            entertainment only and are not professional advice.
+          </p>
+        </div>
+        <div class="card">
+          <h3>How do I change the language?</h3>
+          <p>Go to Settings → Language and choose 繁體中文 or English.</p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>聯絡我們 Contact</h2>
+        <p>
+          使用上遇到問題、想回報錯誤或提供建議，歡迎來信，我們會盡快回覆。<br />
+          For help, bug reports or feedback, email us and we will reply as soon as we can.
+        </p>
+        <p class="contact">
+          <a href="mailto:brianlin2021@gmail.com">brianlin2021@gmail.com</a>
+        </p>
+        <p class="note">
+          來信時請附上裝置型號、系統版本與 App 版本（設定 → 關於）。<br />
+          Please include your device model, OS version and app version (Settings → About).
+        </p>
+      </section>
+
+      <footer>
+        <p>© 2026 Brian Lin</p>
+        <p>紫微攻略 / Ziwei: Career &amp; Love</p>
+      </footer>
+    </main>
+  </body>
+</html>
