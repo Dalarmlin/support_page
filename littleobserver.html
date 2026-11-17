@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LittleObserver｜Support &amp; Help</title>
+  <meta name="description" content="LittleObserver support: how to observe and measure creatures, FAQ, permissions, and contact." />
+  <style>
+    :root {
+      --bg: #fff8f0;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --green: #2e9055;
+      --green-soft: #4caf70;
+      --line: #ffe4c4;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "PingFang SC", "Noto Sans SC", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    h1 { font-size: 1.85rem; margin: 0 0 8px; }
+    h2 {
+      font-size: 1.2rem;
+      margin: 36px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--line);
+    }
+    p, li { color: var(--ink); }
+    .lead { color: var(--muted); margin: 0 0 24px; }
+    .lang {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--green);
+      background: #d4f0e0;
+      border-radius: 999px;
+      padding: 2px 10px;
+      margin: 0 0 10px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px 18px;
+      margin: 12px 0;
+    }
+    a { color: var(--green); }
+    ol, ul { padding-left: 1.25rem; }
+    details { margin-top: 12px; }
+    summary {
+      cursor: pointer;
+      color: var(--green);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    pre.license-text {
+      background: #fffdf8;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      color: var(--muted);
+      white-space: pre-wrap;
+      word-break: break-word;
+      max-height: 320px;
+      overflow-y: auto;
+      margin: 10px 0 0;
+    }
+    footer {
+      margin-top: 48px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>LittleObserver｜小小觀察家</h1>
+    <p class="lead">
+      Photograph creatures, measure length with a reference object, train on-device AI, and export reports.
+      拍照觀察生物、用參考物量長度、訓練裝置端 AI，並匯出報告。<br />
+      This page covers how to use the app, FAQ, permissions, and contact.
+      本頁提供使用說明、常見問題、權限說明與聯絡方式。
+    </p>
+
+    <h2>Quick Start / 快速開始</h2>
+    <div class="card">
+      <ol>
+        <li>
+          <strong>EN:</strong> Create or select an observation project (e.g. tadpoles, insects).<br />
+          <strong>中：</strong>新增或選擇一個觀察專案（例如蝌蚪、昆蟲）。
+        </li>
+        <li>
+          <strong>EN:</strong> In Parent Settings, add a <em>reference object</em> with a known real-world size (coin, ruler mark, etc.).<br />
+          <strong>中：</strong>到「家長設定」新增有真實尺寸的<strong>參考物</strong>（硬幣、尺上的刻度等）。
+        </li>
+        <li>
+          <strong>EN:</strong> Tap “Observe today”, take or pick a photo with the creature and the reference object in frame.<br />
+          <strong>中：</strong>點「今天來觀察！」，拍攝或選取同時含生物與參考物的照片。
+        </li>
+        <li>
+          <strong>EN:</strong> Mark the reference object on the photo so the app knows the scale, then measure the creature (tap head → tail, or use auto-detect if trained).<br />
+          <strong>中：</strong>在照片上標出參考物讓 App 知道比例，再量測生物（點頭→尾，或使用已訓練的自動辨識）。
+        </li>
+        <li>
+          <strong>EN:</strong> Save today’s record. Use “Report” to export Excel / documents when ready.<br />
+          <strong>中：</strong>儲存今日紀錄；需要時到「整理報告」匯出試算表或文件。
+        </li>
+      </ol>
+    </div>
+
+    <h2>FAQ / 常見問題</h2>
+    <div class="card">
+      <details open>
+        <summary>Why do I need a reference object? / 為什麼一定要設定參考物？</summary>
+        <p>
+          <strong>EN:</strong> Photos have no absolute size by themselves. A reference object with a known length (mm) lets LittleObserver convert pixels to real millimeters.<br />
+          <strong>中：</strong>照片本身沒有絕對尺寸。有已知長度（公釐）的參考物，App 才能把畫素換算成真實毫米。
+        </p>
+      </details>
+      <details>
+        <summary>Does the app upload my photos? / 會不會上傳照片？</summary>
+        <p>
+          <strong>EN:</strong> No. Photos, measurements, and AI training data stay on this device. Camera / library access is only for choosing images you decide to use.<br />
+          <strong>中：</strong>不會。照片、量測與 AI 訓練資料都只存在這台裝置。相機／相簿權限僅用於您選擇的影像。
+        </p>
+      </details>
+      <details>
+        <summary>Auto-detect does not find the creature / 自動辨識找不到生物</summary>
+        <p>
+          <strong>EN:</strong> Train the on-device AI first (Parent Settings → AI training) with a few clear photos, or measure manually by tapping head and tail. Good lighting and contrast help.<br />
+          <strong>中：</strong>請先在「家長設定 → 生物 AI 辨識訓練」用幾張清楚照片訓練，或改以手動點頭、尾量測。光線充足、對比明顯會比較準。
+        </p>
+      </details>
+      <details>
+        <summary>Zhuyin (Bopomofo) appears on Traditional Chinese UI / 繁中介面有注音</summary>
+        <p>
+          <strong>EN:</strong> In Traditional Chinese, UI text uses the open-source font BpmfGenSenRounded, which shows Zhuyin beside characters for young readers. Switch language to Simplified Chinese / English / Japanese in Parent Settings if you prefer no Zhuyin.<br />
+          <strong>中：</strong>繁體中文介面使用開源字型「源泉注音圓體」，會在字旁顯示注音，方便小朋友閱讀。若不需要注音，可到家長設定改為简体中文、English 或日本語。
+        </p>
+      </details>
+      <details>
+        <summary>How do I export a report? / 如何匯出報告？</summary>
+        <p>
+          <strong>EN:</strong> From the home screen, open “Report”, select observation records, then create Excel / Word / PPT as available in your build.<br />
+          <strong>中：</strong>在首頁進入「整理報告」，勾選觀察紀錄後依版本提供的選項製作 Excel／Word／簡報。
+        </p>
+      </details>
+    </div>
+
+    <h2>Permissions / 系統權限</h2>
+    <div class="card">
+      <ul>
+        <li>
+          <strong>Camera / 相機：</strong>
+          Photograph specimens for measurement and AI analysis on device.
+          拍攝生物照片以進行本機量測與分析。
+        </li>
+        <li>
+          <strong>Photo Library / 相簿：</strong>
+          Optionally select an existing photo instead of taking a new one.
+          可選擇既有照片，不必每次重拍。
+        </li>
+        <li>
+          <strong>Network / 網路：</strong>
+          Not required for core observation, measurement, or on-device AI.
+          核心觀察、量測與裝置端 AI 不需連網。
+        </li>
+      </ul>
+    </div>
+
+    <h2>Privacy / 隱私</h2>
+    <div class="card">
+      <p>
+        <strong>EN:</strong> LittleObserver is designed for local use. We do not operate a server that receives your photos or measurement records.
+        See also our
+        <a href="https://dalarmlin.github.io/privacy-policy/littleobserver.html">Privacy Policy</a>.
+      </p>
+      <p>
+        <strong>中：</strong>LittleObserver 以本機使用為主，不會把照片或量測紀錄送到我們的伺服器。
+        詳見
+        <a href="https://dalarmlin.github.io/privacy-policy/littleobserver.html">隱私權政策</a>。
+      </p>
+    </div>
+
+    <h2>Contact / 聯絡我們</h2>
+    <div class="card">
+      <p>
+        If something does not work, email us with your device model, OS version, and a screenshot if possible:<br />
+        若遇到無法解決的問題，請來信（請附裝置型號、系統版本、問題截圖）：
+      </p>
+      <p><a href="mailto:Brianlin2021@gmail.com">Brianlin2021@gmail.com</a></p>
+      <p>We usually reply within a few business days. 我們通常會在數個工作天內回覆。</p>
+    </div>
+
+    <h2>Open-source fonts / 開放字型授權</h2>
+    <div class="card">
+      <p>
+        <strong>源泉注音圓體 (BpmfGenSenRounded)</strong><br />
+        Traditional Chinese UI may use this open-source font (with embedded Zhuyin).
+        繁體中文介面可能使用此開源字型（字形內建注音）。
+      </p>
+      <ul>
+        <li>Source / 來源：<a href="https://github.com/ButTaiwan/bpmfvs">ButTaiwan / bpmfvs</a></li>
+        <li>License / 授權：Apache License 2.0 / SIL OFL 1.1（詳見字型套件 NOTICE）</li>
+      </ul>
+      <details>
+        <summary>View NOTICE excerpt / 查看聲明摘要</summary>
+        <pre class="license-text">BpmfGenSenRounded (源泉注音圓體)
+Derived from GenSen Rounded / Source Han Sans related open fonts by But Ko &amp; Adobe.
+Bopomofo IVS Font Specification — Copyright 2020 But Ko
+https://github.com/ButTaiwan/bpmfvs
+
+Licensed under Apache License 2.0 and SIL Open Font License 1.1 as distributed with the font package.
+Full LICENSE / NOTICE files are included in the app binary under FontLicenses/.</pre>
+      </details>
+    </div>
+
+    <footer>
+      LittleObserver · Support page<br />
+      Last updated: 2026-11-17
+    </footer>
+  </main>
+</body>
+</html>
